@@ -13,13 +13,22 @@
     <div class="wrapper">
         <header class="header">
             <div class="container-fluid">
-                <div class="header__wrap">
-                    <div href="/" class="header__logo">
-                        <img src="img/header/logo.png" alt="logo">
+                <div class="row">
+                    <div class="col-6 order-1 col-lg-1">
+                        <div href="/" class="header__logo">
+                            <img src="img/header/logo.png" alt="logo">
+                        </div>
                     </div>
-                    <p class="header__logo_title">
-                        Организация викторин
-                    </p>
+                    <div class="order-3 col-12 order-lg-2 col-lg-10">
+                        <p class="header__logo_title">
+                            ПОРТАЛ ОРГАНИЗАЦИИ ОБУЧЕНИЯ, ТЕСТИРОВАНИЯ И ВИКТОРИН
+                        </p>
+                    </div>
+                    <div class="order-2 col-6 order-lg-3 col-lg-1">
+                        <div href="/" class="header__flag">
+                            <img src="img/header/flag.png" alt="flag">
+                        </div>
+                    </div>
                 </div>
             </div>
         </header>
@@ -30,44 +39,6 @@
                     <li class="btn__list_item"><a href="#" class="btn__list_item_link">организатор</a></li>
                     <li class="btn__list_item"><a href="#" class="btn__list_item_link">Участник</a></li>
                 </ul>
-            </div>
-            <div class="quiz">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="offset-0 col-12 offset-lg-1 col-lg-10">
-                            <form class="quiz__form">
-                                <div class="quiz__form_item">
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-2">
-                                            <p class="quiz__form_name_title">
-                                                Название
-                                            </p>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <input type="text" maxlength="255" class="quiz__form_description" placeholder="Название викторины длинной до 255 символов">
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="quiz__form_item">
-                                    <div class="row align-items-center">
-                                        <div class="col-sm-2">
-                                            <label class="quiz__form_label">
-                                                <input type="checkbox" id="checkbox" class="quiz__form_checkbox" checked required>
-                                                <span class="quiz__form_checkbox-span"></span>                                            
-                                            </label>
-                                        </div>
-                                        <div class="col-sm-10">
-                                            <span class="quiz__form_label_link">
-                                                Показывать лидеров Online 
-                                                
-                                            </span>
-                                        </div>
-                                    </div>                                           
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
             </div>
         </main>
         <footer class="footer" id="footer">

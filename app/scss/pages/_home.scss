@@ -6,23 +6,38 @@
   flex-direction: column;
   justify-content: space-between;
 }
+.main {
+  padding: 80px 0;
+}
+@media screen and (max-width: 1201.5px) {
+  .main {
+    padding: 0;
+  }
+}
 /*******Header*******/
 .header {
   &__wrap {
     display: flex;
     align-items: center;
+    position: relative;
   }
   &__logo {
     width: 80px;
     height: auto;
-    margin-right: 20px;
+  }
+  &__flag {
+    width: 60px;
+    height: auto;
+    margin-left: auto;
   }
   &__logo_title {
     font-family: $font-family;
     color: $light;
     font-size: 20px;
-    line-height: 80px;
+    line-height: 35px;
+    padding: 16px 0;
     text-transform: uppercase;
+    text-align: center;
   }
 }
 @media screen and (max-width: 440.5px) {
@@ -49,7 +64,7 @@
   &__list_item_link {
     font-family: $font-family;
     color: $dark;
-    padding: 37px 75px;
+    padding: 37px 0;
     background: $light;
     display: flex;
     align-items: center;
@@ -89,14 +104,13 @@
 /*******Quiz*******/
 .quiz {
   padding: 100px 0;
-  background: url(../img/quiz/quiz-bg.jpg) no-repeat center center/cover;
   &__form {
 
   }
   &__form_item {
-    border: 3px solid $light;
+    border: 1px solid $light;
     border-radius: 10px;
-    padding: 12px;
+    padding: 11px;
     margin-bottom: 40px;
     &:last-child {
       margin-bottom: 0;
@@ -110,7 +124,7 @@
   }
   &__form_description {
     width: 100%;
-    padding: 26px;
+    padding: 11px 11px 11px 25px;
     border: none;
     outline: none;
     background: $light;
@@ -135,8 +149,8 @@
       left: 50%;
       top: 50%;
       transform: translate(-50%, -50%);
-      width: 24px;
-      height: 22px;
+      width: 18px;
+      height: 16px;
       background: url(../img/quiz/check-mark.png) no-repeat center center/100% auto;
     }
   }
